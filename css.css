@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(27, 207, 147);
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+}
+#board{
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    grid-template-rows: 140px 140px 140px;
+    cursor: pointer;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+.posizione{
+    font-size:2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bordo-destro{
+    border-right: 0.2em solid black;
+        
+}
+.linea-sinistro{
+    border-left: 0.2em solid black;
+}
+
+.bottone-bordo{
+    border-bottom: 0.2em solid black;
+}
+.linea-sopra{
+    border-top: 0.2em solid black;
+}
+#gameContainer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.button2 {
+    background-color:rgb(168, 50, 50); 
+    border: 1px solid #4AC19B;
+  }
+  
+.button2:hover {
+    background-color: rgb(27, 207, 147);
+    color: BLACK;
+    
+ }
+.button {
+    
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 1px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .cell{
+    font-size: 65px;
+    border: 3px solid;
+    box-shadow: 0 0 0 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #4AC19B;
+
+ }
+ .x:hover::after{
+    content: "X";
+ }
+ .o:hover::after{
+    content: "X";
+ }
+
+ .strike {
+    background-color: #4AC19B;
+ }
+
+ #contenitoreGioco{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+#statusText{
+   color: rgb(173, 95, 95);
+   font-size: 35px;
+}
+
+/*#board{
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    grid-template-rows: 140px 140px 140px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+body{
+    background-color: rgb(27, 207, 147);
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+}
+
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+#gameContainer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+
